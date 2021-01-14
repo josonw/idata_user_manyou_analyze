@@ -1,2 +1,2 @@
-![1610632707977](https://github.com/josonw/idata_user_manyou_analyze/tree/master/Image/1610633021656.png)
+![Image text](https://github.com/josonw/idata_user_manyou_analyze/raw/master//Image/1610633021656.png)
 
