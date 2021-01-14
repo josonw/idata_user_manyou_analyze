@@ -1,4 +1,11 @@
+-- TSYH1_result_months_all1 一级渠道
 select
+datas,prov_name,product_name,product_type,channel,
+sum(jihuo_count) as jihuo_count,
+sum(dinggou_count) as dinggou_count,
+sum(tuiding_count) as tuiding_count,
+sum(yonghu_count) as yonghu_count
+from(select
 datas,prov_name,product_name,product_type,
 ifnull(case when substring(channel,-1)=3 then channel when substring(channel,-1)=2 then channel 
 when substring(channel,-1)=1 then channel end,'全部') as channel,
@@ -69,4 +76,6 @@ group by datas,prov_name,product_name,product_type,
 jihuo_count,
 dinggou_count,
 tuiding_count,
-yonghu_count
+yonghu_count)mm
+group by 
+datas,prov_name,product_name,product_type,channel
