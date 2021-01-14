@@ -1,4 +1,5 @@
--- TSYH1_result_months_all1 一级渠道
+-- 三个渠道的下拉按钮，当选择一级、二级、三级 渠道的时候只会显示三级的渠道，以此类推
+
 select
 datas,prov_name,product_name,product_type,channel,
 sum(jihuo_count) as jihuo_count,
